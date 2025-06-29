@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+.create-todo {
+  width: 100%; /* Ensure parent container takes full width */
+  display: flex;
+  justify-content: center; /* Center the form */
+  box-sizing: border-box;
+}
+
+.create-todo form {
+  display: flex;
+  width: 50%;  
+  margin-top: 2px;
+  max-width: 600px;  
+  min-width: 300px;  
+  border:none;  
+  padding: 10px;  
+  box-sizing: border-box; /* Ensures form doesn’t overflow */
+}
+td, th {
+  padding-right: 60px; /* Adds 15px gap between columns */
+}
+
+table{
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+
+.create-todo input {
+  width: 100%; /* Ensures input fills the form */
+  padding: 8px;  
+  
+  border: 2px solid black;   
+  box-sizing: border-box; /* Prevents input overflow */
+  display: block; /* Ensures proper width */
+  box-shadow: 10px 10px 8px rgba(224, 215, 215, 0.871);
+}
+
+
+.todo-structure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+
+ button {
+  background: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 10px 10px 8px rgba(224, 215, 215, 0.871);
+}
+
+button:hover {
+  background: #218838;
+}
+
+
+.Edit{
+  height: 40px;
+  width: 80px;
+  background-color: blueviolet;
+}
+
+.Edit:hover{
+  height: 40px;
+  width: 80px;
+  background-color: rgba(137, 43, 226, 0.789);
+}
+.Delete{
+  height: 40px;
+  width: 80px;
+  background-color: red;
+}
+
+.Delete:hover{
+  background-color: rgba(255, 0, 0, 0.562);
+}
+
+/* Cart Section */
+.cart {
+  margin-top: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.remove-btn {
+  background: #dc3545;
+  padding: 5px;
+}
+
+.remove-btn:hover {
+  background: #c82333;
+}
+
+.empty-cart {
+  color: gray;
+}
